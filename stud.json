@@ -1,0 +1,35 @@
+{
+    "student": [
+        {
+            "sno": 1,
+            "name": "yuvanthika",
+            "address": "tutucorin",
+            "course": "Python",
+            "course_duration": "1 month"
+        },
+        {
+            "sno": 2,
+            "name": "durga",
+            "address": "tutucorinasdf",
+            "course": "Python",
+            "course_duration": "1 month"
+        },
+        {
+            "sno": 3,
+            "name": "Divya",
+            "address": "tutucorin",
+            "course": "Tally",
+            "course_duration": "1 month"
+        }
+    ],
+    "users": [
+        {
+            "username": "yuvan@gmail.com",
+            "password": "123456"
+        },
+        {
+            "username": "uv@gmail.com",
+            "password": "1234"
+        }
+    ]
+}
