@@ -20,6 +20,13 @@
             "address": "tutucorin",
             "course": "Tally",
             "course_duration": "1 month"
+        },
+        {
+            "sno": 4,
+            "name": "szfsadfg",
+            "address": "dfdfg",
+            "course": "Python",
+            "course_duration": "2 months"
         }
     ],
     "users": [

@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,redirect
+from flask import Flask,render_template,request,redirect,url_for
 from jsonutiles import *
 
 app=Flask(__name__)
@@ -22,15 +22,20 @@ def resister():
 # @app.route("/msg/<str>")
 @app.route("/",methods=["POST","GET"])
 def login():
+    msg=""
     if request.method=="POST":
+        
         data=read_json()
         for user in data["users"]:
-            print(request.form["username"],user["username"])
-            print(request.form["pass"],user["password"])
+            # print(request.form["username"],user["username"])
+            # print(request.form["pass"],user["password"])
             if request.form["username"]==user["username"] and request.form["pass"]==user["password"]:
                 print("login succesfully")
+                
                 return redirect("/home")
-    return render_template("login.html")
+        msg=request.form["username"]+"username not match"    
+            
+    return render_template("login.html",msg=msg)
 
 @app.route("/delete/<id>")
 def delete(id):
